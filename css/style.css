@@ -646,6 +646,14 @@ footer {
 .last {
   display: none;
 }
+footer {
+  hr {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #43484d;
+    border: 1px solid #43484d;
+  }
+}
 @media only screen and (max-width: 768px) {
   header {
     background-color: #fff;
