@@ -1,7 +1,8 @@
 .about-hero--in {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .about-hero {
   margin-top: 100px;
@@ -37,6 +38,7 @@
   }
   p {
     margin-top: 25px;
+    margin-bottom: 25px;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
@@ -48,7 +50,6 @@
     color: #3c4959;
   }
   h3 {
-    margin: 50px 0;
     font-family: Montserrat;
     font-size: 26px;
     font-weight: 600;
