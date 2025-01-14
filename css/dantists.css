@@ -1,0 +1,182 @@
+.dantist-in {
+  padding-top: 90px;
+}
+.dantist-title {
+  h2 {
+    font-family: Montserrat;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 74.4px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #43484d;
+  }
+  p {
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.9px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 35%;
+    margin-bottom: 80px;
+  }
+}
+.dantist-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: -1;
+  flex-wrap: wrap;
+}
+.dantist-search--input {
+  img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  input {
+    height: 60px;
+    width: 340px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #cfcfcf;
+    padding-left: 50px;
+  }
+}
+.dantist-search--category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+  padding: 16px 18px;
+}
+.dantist-cardss {
+  margin-bottom: 60px;
+}
+.dantist-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.dantist-card {
+  width: 305px;
+  height: 341px;
+  top: 676px;
+  left: 568px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #43484d;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  h3 {
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+  }
+  p {
+    margin-left: 40px;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.8px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    margin-top: 5px;
+  }
+}
+
+.check-btn {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 196px;
+  height: 55px;
+  padding: 15px 30px 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 0px;
+  background-color: #6e96c8;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  letter-spacing: 0.015em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+.dantist-cards-in {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .dantist-title {
+    h2 {
+      font-size: 42px;
+      line-height: 52.5px;
+    }
+    p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24.8px;
+    }
+  }
+
+  .dantist-search--input {
+    width: 100% !important;
+
+    img {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+    input {
+      height: 60px;
+      width: 100% !important;
+      border-radius: 15px;
+      background-color: transparent;
+      outline: none;
+      border: 1px solid #cfcfcf;
+      padding-left: 50px;
+    }
+  }
+
+  .dantist-search--category {
+    margin-top: 20px;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 16px 18px;
+  }
+}

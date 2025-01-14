@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Section</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .faq-section {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      .faq-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .faq-item {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+      }
+
+      .faq-question {
+        background-color: #fff;
+        color: #333;
+        padding: 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .faq-answer {
+        display: none;
+        padding: 15px;
+        font-size: 16px;
+        background-color: #4a90e2;
+        color: #fff;
+        transition: max-height 0.3s ease;
+      }
+
+      .faq-item.active {
+        background-color: #4a90e2;
+      }
+
+      .faq-item.active .faq-question {
+        background-color: #4a90e2;
+        color: #fff;
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+
+      .faq-icon {
+        font-size: 20px;
+        line-height: 1;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      @media (max-width: 600px) {
+        .faq-question {
+          font-size: 16px;
+        }
+
+        .faq-answer {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq-section">
+      <div class="faq-title">Frequently Asked Questions</div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I see who reads my email campaigns?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur. Convallis cras placerat
+          dignissim aliquam massa. Aliquet volutpat rhoncus in convallis
+          consectetur.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you offer non-profit discounts?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur. Convallis cras placerat
+          dignissim aliquam massa. Aliquet volutpat rhoncus in convallis
+          consectetur.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const parent = question.parentElement;
+          const isActive = parent.classList.contains("active");
+
+          document
+            .querySelectorAll(".faq-item")
+            .forEach((item) => item.classList.remove("active"));
+
+          if (!isActive) {
+            parent.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
