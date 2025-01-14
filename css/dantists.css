@@ -85,26 +85,23 @@
     border-radius: 10px 10px 0 0;
   }
   h3 {
-    margin-left: 40px;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 5px;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
     line-height: 28.8px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #fff;
   }
   p {
-    margin-left: 40px;
-
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     line-height: 24.8px;
     letter-spacing: 0.015em;
-    text-align: left;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #fff;
